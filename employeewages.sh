@@ -1,8 +1,8 @@
 EMPLOYEE_PART_TIME=1
 EMPLOYEE_FULL_TIME=2
-EMPLOYEE_RATE_PER_HOUR=100
-MAX_WORKING_DAYS=8
-MAX_WORKING_HOURS=20
+EMPLOYEE_RATE_PER_HOUR=20
+MAX_WORKING_DAYS=5
+MAX_WORKING_HOURS=8
 
 
 #Variable
@@ -14,7 +14,6 @@ total_working_hours=0
 getEmployeeWage() {
         #switch - generate workDone per day
         case $1 in
-                $EMPLOYEE_PART_TIME) workDone=4;;
                 $EMPLOYEE_FULL_TIME) workDone=8;;
                 *) workDone=0;;
         esac
